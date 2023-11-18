@@ -1,0 +1,18 @@
+.toolbar {
+    display: flex;
+    gap: 2px; 
+  }
+  
+  .button-card {
+    background-color: white;
+    border: 2px solid #000;
+    padding: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .button-card.active {
+    transform: scale(0.9);
+    background-color: #ccc;
+  }
+  

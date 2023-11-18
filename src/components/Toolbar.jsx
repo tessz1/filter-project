@@ -1,13 +1,13 @@
 import React from 'react';
-
+import "../styles/Toolbar.css"
 function Toolbar({ filters, selected, onSelectFilter }) {
   return (
-    <div>
+    <div className='toolbar'>
       {filters.map((filter) => (
-        <button
+        <button 
           key={filter}
           onClick={() => onSelectFilter(filter)}
-          className={filter === selected ? 'active' : ''}
+          className={`button-card ${filter === selected ? 'active' : ''}`}
         >
           {filter}
         </button>
